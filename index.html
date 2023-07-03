@@ -2,11 +2,24 @@
 <html>
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZTRTM9F6K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XZTRTM9F6K');
+    </script>
+
     <title>Text Chunker: Your Online Solution for Text Splitting and AI Token Limit Management</title>
-    <meta name="description" content="Effortlessly split large bodies of text into smaller, manageable chunks with Text Chunker. Our tool aids in preparing text for AI models like GPT-3 by addressing token limits. Start streamlining your text management today.">
+    <meta name="description"
+        content="Effortlessly split large bodies of text into smaller, manageable chunks with Text Chunker. Our tool aids in preparing text for AI models like GPT-3 by addressing token limits. Start streamlining your text management today.">
 
     <meta property="og:title" content="Text Chunker - Manage Text Sizes for AI Models" />
-    <meta property="og:description" content="Text Chunker is a tool that helps you split large bodies of text into smaller chunks based on a user-defined token limit. It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3." />
+    <meta property="og:description"
+        content="Text Chunker is a tool that helps you split large bodies of text into smaller chunks based on a user-defined token limit. It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3." />
     <meta property="og:url" content="https://www.textchunker.com" />
     <meta property="og:image" content="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" />
 
@@ -16,23 +29,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
 
 </head>
 
 <body class="bg-dark text-white antialiased">
     <div class="container">
-        <img src="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" alt="Text Chunker" class="my-4 d-block mx-auto">
+        <img src="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" alt="Text Chunker"
+            class="my-4 d-block mx-auto">
         <h5 class="mb-3 text-center text-info">Transform Mammoth Texts into ChatGPT-Friendly Bites!</h5>
-        <p class="mb-4 text-center text-muted">Transform Large Texts into Manageable Chunks with Our Text Splitting Tool. Our tool helps you split large bodies of text into smaller chunks based on a user-defined token limit. It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3 by OpenAI. Just enter your text, set the token limit, and get your text transformed into manageable pieces with our Text Chunking Tool!</p>
+        <p class="mb-4 text-center text-muted">Transform Large Texts into Manageable Chunks with Our Text Splitting
+            Tool. Our tool helps you split large bodies of text into smaller chunks based on a user-defined token limit.
+            It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3 by OpenAI.
+            Just enter your text, set the token limit, and get your text transformed into manageable pieces with our
+            Text Chunking Tool!</p>
         <div class="form-group">
-            <textarea id="inputText" class="form-control" rows="10" placeholder="Ready, set, paste! Kickstart your process by entering your large document here"></textarea>
+            <textarea id="inputText" class="form-control" rows="10"
+                placeholder="Ready, set, paste! Kickstart your process by entering your large document here"></textarea>
         </div>
         <div class="form-group">
             <label for="tokenLimit" class="text-muted">Token limit (Estimated)</label>
             <input type="number" id="tokenLimit" class="form-control" value="4096">
         </div>
-        
+
         <button onclick="splitTextIntoChunks()" class="btn btn-custom mb-3">Split text</button>
         <div id="chunks"></div>
     </div>
