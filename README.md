@@ -9,6 +9,9 @@ Text Chunker is a simple web-based application designed to split large bodies of
 - Copy chunks to clipboard with a single click
 - User-friendly and responsive interface
 
+## Try It Out
+https://textchunker.com/
+
 - ## License
 
 textChunker is licensed under the [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.en.html) (Affero General Public License, version 3.0).
