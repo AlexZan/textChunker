@@ -2,6 +2,8 @@
 
 Text Chunker is a simple web-based application designed to split large bodies of text into smaller, manageable chunks based on a user-defined token limit. This tool is particularly useful when working with AI models with a maximum token limit, such as GPT-3 by OpenAI.
 
+This is *NOT* an API but a web application and this repo is primaraly used for issue tracking and pull requests.
+
 ## Features
 
 - Split large text into chunks
