@@ -1,8 +1,9 @@
 var chunks = [];
+var reduction = 3/4;
 
 function splitTextIntoChunks() {
     var text = document.getElementById('inputText').value;
-    var tokenLimit = document.getElementById('tokenLimit').value;
+    var tokenLimit = document.getElementById('tokenLimit').value * reduction;
     var words = text.split(' ');
     chunks = [];
     var currentChunk = "";
@@ -52,7 +53,7 @@ function splitTextIntoChunks() {
         })(chunks[i], 'chunkButton' + i);
 
         var chunkSize = document.createElement('p');
-        chunkSize.textContent = 'Estimated token count: ' + chunks[i].split(' ').length;
+        chunkSize.textContent = 'Estimated token count: ' + Math.round(chunks[i].split(' ').length / reduction);
         chunkSize.className = 'mb-3';  // Apply Bootstrap classes
 
         chunksDiv.appendChild(chunkButton);
