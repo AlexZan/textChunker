@@ -72,3 +72,11 @@ button.btn-custom {
     color: #D9D9E3;
     border: none;
 }
+
+.text-muted-dark {
+    color: #3d3d3d !important; /* Darker muted color */
+}
+
+.footer a {
+    color: #2b2b2b !important;  /* Muted medium gray color */
+}
