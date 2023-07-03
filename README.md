@@ -26,5 +26,3 @@ textChunker welcomes and appreciates contributions from the public. If you would
 - Ensure that your contributions comply with the terms of the AGPL-3.0 license.
 
 By submitting a pull request, you agree to allow the textChunker organization to license your contributions under the terms of the AGPL-3.0 license. This ensures that your improvements and modifications will be shared with the community.
-
-For more information on contributing, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
