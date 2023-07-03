@@ -58,7 +58,16 @@
             <input type="number" id="tokenLimit" class="form-control" value="4096">
         </div>
 
-        <button onclick="splitTextIntoChunks()" class="btn btn-custom mb-3">Chunk It!</button>
+        <div class="row">
+            <div class="col-11">
+                <button onclick="splitTextIntoChunks()" class="btn btn-custom mb-3 w-100">Chunk It!</button>
+            </div>
+            <div class="col-1">
+                <button onclick="copyPromptExample()" class="btn btn-custom mb-3 w-100" title="Copy Initial Prompt Example">
+                    <i class="fas fa-clipboard"></i>
+                </button>
+            </div>
+        </div>
         <div id="chunks"></div>
     </div>
     <script src="scripts.js"></script>

@@ -63,5 +63,16 @@ function splitTextIntoChunks() {
 
 $(function () {
     $('[data-toggle="popover"]').popover()
-  })
-  
+})
+
+
+function copyPromptExample() {
+    // Generate the example prompt based on the chunks array
+    var examplePrompt = "Hello GPT, I will be providing a larger document to you in several parts. Please process each part and simply respond with 'Next' until I indicate that I'm finished by writing 'done' at the end of a prompt. Please retain the information from each part in order to maintain context throughout our interaction. Let's begin.";
+
+    // Copy the example prompt to the clipboard
+    navigator.clipboard.writeText(examplePrompt).then(function () {
+    }).catch(function (error) {
+        alert('Failed to copy Prompt Example: ' + error);
+    });
+}
