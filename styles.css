@@ -80,3 +80,19 @@ button.btn-custom {
 .footer a {
     color: #3d3d3d !important;  /* Muted medium gray color */
 }
+
+.popover-dark {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    border-color: #343a40; /* Dark border */
+}
+
+.popover-dark .popover-header {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+.popover-dark .popover-body {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}

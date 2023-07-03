@@ -1,5 +1,5 @@
 var chunks = [];
-var reduction = 3/4;
+var reduction = 3 / 4;
 
 function splitTextIntoChunks() {
     var text = document.getElementById('inputText').value;
@@ -39,8 +39,8 @@ function splitTextIntoChunks() {
         chunkButton.textContent = 'Copy Chunk ' + (i + 1);
         chunkButton.id = 'chunkButton' + i;
         chunkButton.className = 'btn btn-light mb-2';  // Apply Bootstrap classes
-        chunkButton.onclick = (function(chunk, buttonId) {
-            return function() {
+        chunkButton.onclick = (function (chunk, buttonId) {
+            return function () {
                 var textarea = document.createElement('textarea');
                 textarea.textContent = chunk;
                 document.body.appendChild(textarea);
@@ -60,3 +60,8 @@ function splitTextIntoChunks() {
         chunksDiv.appendChild(chunkSize);
     }
 }
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+  
