@@ -65,7 +65,10 @@ p, h5 {
     margin-bottom: 20px;
 }
 
-button {
+button.btn-custom {
     display: block;
     width: 100%;
+    background-color: #4E5D6C;
+    color: #D9D9E3;
+    border: none;
 }
