@@ -1,0 +1,20 @@
+# .gitignore
+
+# Ignore .vscode folder
+.vscode
+
+# Ignore node modules
+node_modules/
+
+# Ignore the npm debug logs
+npm-debug.log*
+
+# Ignore all log files
+*.log
+
+# Ignore all .env files
+*.env
+
+# Ignore build/production files
+/dist/
+/build/
