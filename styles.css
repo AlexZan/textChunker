@@ -96,3 +96,8 @@ button.btn-custom {
     background-color: #343a40; /* Dark background */
     color: #f8f9fa; /* Light text */
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}

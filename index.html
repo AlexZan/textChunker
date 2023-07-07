@@ -14,7 +14,6 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    
 
     <title>Text Chunker: Your Online Solution for Text Splitting and AI Token Limit Management</title>
     <meta name="description"
@@ -25,7 +24,6 @@
         content="Text Chunker is a tool that helps you split large bodies of text into smaller chunks based on a user-defined token limit. It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3." />
     <meta property="og:url" content="https://www.textchunker.com" />
     <meta property="og:image" content="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" />
-
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -38,32 +36,48 @@
 
 <body class="bg-dark text-white antialiased">
     <div class="container">
-        <img src="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" alt="Text Chunker"
-            class="my-4 d-block mx-auto">
-        <h5 class="mb-3 text-center text-info">Transform Mammoth Texts into ChatGPT-Friendly Bites!</h5>
-        <p class="mb-4 text-center text-muted">Transform Large Texts into Manageable Chunks with Our Text Splitting
-            Tool. Our tool helps you split large bodies of text into smaller chunks based on a user-defined token limit.
-            It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3 by OpenAI.
-            Just enter your text, set the token limit, and get your text transformed into manageable pieces with our
-            Text Chunking Tool!</p>
-        <div class="form-group">
-            <textarea id="inputText" class="form-control" rows="10"
-                placeholder="Ready, set, paste! Kickstart your process by entering your large document here"></textarea>
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="https://raw.githubusercontent.com/AlexZan/textChunker/main/title.PNG" alt="Text Chunker"
+                    class="my-4 img-fluid">
+                <h5 class="mb-3 text-center text-info">Transform Mammoth Texts into ChatGPT-Friendly Bites!</h5>
+                <p class="mb-4 text-center text-muted">Transform Large Texts into Manageable Chunks with Our Text
+                    Splitting
+                    Tool. Our tool helps you split large bodies of text into smaller chunks based on a user-defined
+                    token limit.
+                    It's particularly useful when dealing with AI models with a maximum token limit, such as GPT-3 by
+                    OpenAI.
+                    Just enter your text, set the token limit, and get your text transformed into manageable pieces with
+                    our
+                    Text Chunking Tool!</p>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="tokenLimit" class="text-muted">Token limit (Estimated)
-                <i class="fas fa-info-circle text-info" data-toggle="popover" data-trigger="hover" title="About Token Estimate" data-content="By utilizing this estimation method for token count, our tool operates without the need for a server-side component, enhancing the privacy and efficiency of your text processing. This differs from using OpenAI's token counting library, which would require server-side implementation and potentially involve data transmission. Our method provides a close approximation, allowing you to stay within token limits while maintaining the convenience and privacy of client-side processing." data-template='<div class="popover popover-dark" role="tooltip"><div class="arrow"></div><h3 class="popover-header text-white"></h3><div class="popover-body text-white"></div></div>'></i>
-            </label>
-            
-            <input type="number" id="tokenLimit" class="form-control" value="4096">
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <textarea id="inputText" class="form-control" rows="10"
+                        placeholder="Ready, set, paste! Kickstart your process by entering your large document here"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tokenLimit" class="text-muted">Token limit (Estimated)
+                        <i class="fas fa-info-circle text-info" data-toggle="popover" data-trigger="hover"
+                            title="About Token Estimate"
+                            data-content="By utilizing this estimation method for token count, our tool operates without the need for a server-side component, enhancing the privacy and efficiency of your text processing. This differs from using OpenAI's token counting library, which would require server-side implementation and potentially involve data transmission. Our method provides a close approximation, allowing you to stay within token limits while maintaining the convenience and privacy of client-side processing."
+                            data-template='<div class="popover popover-dark" role="tooltip"><div class="arrow"></div><h3 class="popover-header text-white"></h3><div class="popover-body text-white"></div></div>'></i>
+                    </label>
+
+                    <input type="number" id="tokenLimit" class="form-control" value="4096">
+                </div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-11">
+            <div class="col-sm-12 col-md-11">
                 <button onclick="splitTextIntoChunks()" class="btn btn-custom mb-3 w-100">Chunk It!</button>
             </div>
-            <div class="col-1">
-                <button onclick="copyPromptExample()" class="btn btn-custom mb-3 w-100" title="Copy Initial Prompt Example">
+            <div class="col-sm-12 col-md-1">
+                <button onclick="copyPromptExample()" class="btn btn-custom mb-3 w-100"
+                    title="Copy Initial Prompt Example">
                     <i class="fas fa-clipboard"></i>
                 </button>
             </div>
