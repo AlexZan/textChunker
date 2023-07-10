@@ -1,5 +1,5 @@
 var chunks = [];
-var reduction = 3 / 4;
+var reduction = 0.615;
 
 function splitTextIntoChunks() {
     var text = document.getElementById('inputText').value;

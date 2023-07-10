@@ -64,7 +64,7 @@
                     <label for="tokenLimit" class="text-muted">Token limit (Estimated)
                         <i class="fas fa-info-circle text-info" data-toggle="popover" data-trigger="hover"
                             title="About Token Estimate"
-                            data-content="By utilizing this estimation method for token count, our tool operates without the need for a server-side component, enhancing the privacy and efficiency of your text processing. This differs from using OpenAI's token counting library, which would require server-side implementation and potentially involve data transmission. Our method provides a close approximation, allowing you to stay within token limits while maintaining the convenience and privacy of client-side processing."
+                            data-content="We use a client-side estimation method for token count that allows our tool to operate without the need for a server-side component, enhancing the privacy and efficiency of your text processing. This differs from using OpenAI's token counting library, which would require server-side implementation and potentially involve data transmission. Our method provides a close approximation - roughly 61.5% of the maximum token limit - to help ensure you stay within the token limit imposed by AI models. This method maintains the convenience and privacy of client-side processing, while also taking into account factors such as punctuation and special characters which can affect the token count."
                             data-template='<div class="popover popover-dark" role="tooltip"><div class="arrow"></div><h3 class="popover-header text-white"></h3><div class="popover-body text-white"></div></div>'></i>
                     </label>
 
