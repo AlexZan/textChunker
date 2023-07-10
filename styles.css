@@ -10,7 +10,9 @@ body, html {
     line-height: inherit;
     box-sizing: border-box;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px; /* Here we added the new font size */
 }
+
 
 *, :after, :before {
     border: 0 solid #d9d9e3;
@@ -80,6 +82,11 @@ button.btn-custom {
 .footer a {
     color: #3d3d3d !important;  /* Muted medium gray color */
 }
+
+.popover-body {
+    font-size: 16px;
+}
+
 
 .popover-dark {
     background-color: #343a40; /* Dark background */
